@@ -19,7 +19,7 @@ def main():
     else:
         print("Please type your Spotify username in command line to allow access to your account!")
         sys.exit()
-    token = util.prompt_for_user_token(username, scopes, client_id='037fc929d3694a2a8b32fe9c32a4af28', client_secret='90ece485815946c28246292ec73dfe7d', redirect_uri='https://www.google.com/callback')
+    token = util.prompt_for_user_token(username, scopes, client_id='CLIENTKEY', client_secret='CLIENTSECRET', redirect_uri='https://www.google.com/callback')
     if token:
         spotify = spotipy.Spotify(auth=token)
         #Set-up playlists
